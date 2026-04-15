@@ -1,0 +1,77 @@
+!This program cannot be run in DOS mode.
+g&0K(u(H,^
+alw%W*@s
+$ ,dddd(
+:+.__/|_|\ 
+elcome to the YaraRules0x100 cha
+llenge!^S.,,
+InformationProcess/
+Unknown excep
+bad alloc
+rray new s
+.text$div
+.idata$5
+.rsrc$0q
+.?AVbad_
+%_type_info[
+GetCurrent`Id
+Terminate
+&ExitCo9
+eModuleFileNameWR
+MultiByteToWO
+=932Firstc
+Y SetUnh
+IsDebuggerP
+InitializeSListHea
+oystemTimeAsXe	
+SingleObject`LastErro
+Toolhelp3x
+2Snapsho
+LookupPriv
+AdjustTokH
+0X_configt
+#seh_fil
+"_on _tabb
+eg3er_z_{Iw
+backRcrt
+ontrolfp_
+Xde_argv
+,tenvironm
+on_vsp^tfK_p>
+SolidBrush
+sZEndDPog
+PostQuit
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+ADVAPI32.dll
+api-ms-win-crt-convert-l1-1-0.dll
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+GDI32.dll
+KERNEL32.DLL
+SHELL32.dll
+USER32.dll
+VCRUNTIME140.dll
+OpenProcessToken
+_configthreadlocale
+__setusermatherr
+_set_fmode
+TextOutW
+ExitProcess
+GetProcAddress
+LoadLibraryA
+VirtualProtect
+CommandLineToArgvW
+FillRect
+b3`5d5l5
