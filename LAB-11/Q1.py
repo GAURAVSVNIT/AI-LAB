@@ -18,46 +18,38 @@ for i in range(n):
         row.append(0)
     adj_matrix.append(row)
 
-# The original adjacency list 
+# The mapped numeric adjacency list 
 adj_list = {
-"Kuchchh": [],
- "Banaskantha": ["Patan", "Mehsana", "Sabarkantha"],
- "Patan": ["Banaskantha", "Surendranagar", "Mehsana"],
- "Mehsana": ["Patan", "Banaskantha", "Sabarkantha", "Gandhinagar",
-             "Ahmedabad", "Surendranagar"],
- "Sabarkantha": ["Banaskantha", "Mehsana", "Gandhinagar", "Kheda",
-                 "Panchmahal"],
- "Surendranagar": ["Patan", "Mehsana", "Ahmedabad", "Bhavnagar",
-                    "Rajkot"],
- "Rajkot": ["Surendranagar", "Bhavnagar", "Amreli", "Junagadh",
-                "Porbandar", "Jamnagar"],
- "Jamnagar": ["Rajkot", "Porbandar"],
- "Porbandar": ["Jamnagar", "Rajkot", "Junagadh"],
- "Junagadh": ["Porbandar", "Rajkot", "Amreli"],
- "Amreli": ["Junagadh", "Rajkot", "Bhavnagar"],
- "Bhavnagar": ["Amreli", "Rajkot", "Surendranagar", "Ahmedabad"],
- "Ahmedabad": ["Surendranagar", "Mehsana", "Gandhinagar", "Kheda", "Anand",
-"Bhavnagar"],
- "Gandhinagar": ["Mehsana", "Sabarkantha", "Kheda", "Ahmedabad"],
- "Kheda": ["Gandhinagar", "Sabarkantha", "Panchmahal", "Vadodara", "Anand",
-           "Ahmedabad"],
- "Anand": ["Ahmedabad", "Kheda", "Vadodara"],
- "Panchmahal": ["Sabarkantha", "Kheda", "Vadodara", "Dahod"],
- "Dahod": ["Panchmahal", "Vadodara"],
- "Vadodara": ["Anand", "Kheda", "Panchmahal", "Dahod", "Narmada", "Bharuch"],
- "Bharuch": ["Vadodara", "Narmada", "Surat", "Anand"],
- "Narmada": ["Vadodara", "Bharuch", "Surat"],
- "Surat": ["Bharuch", "Narmada", "Navsari", "Dangs"],
- "Navsari": ["Surat", "Dangs", "Valsad"],
- "Dangs": ["Navsari", "Surat"],
- "Valsad": ["Navsari"]
+    0: [], 
+    1: [2, 3, 4], 
+    2: [1, 10, 3], 
+    3: [2, 1, 4, 5, 6, 10], 
+    4: [1, 3, 5, 7, 8], 
+    5: [3, 4, 7, 6],
+    6: [10, 3, 5, 7, 17, 16],
+    7: [5, 4, 8, 18, 17, 6],
+    8: [4, 7, 18, 9], 
+    9: [8, 18],
+    10: [2, 3, 6, 16, 11], 
+    11: [10, 16, 15, 14, 13, 12], 
+    12: [11, 13], 
+    13: [12, 11, 14], 
+    14: [13, 11, 15], 
+    15: [14, 11, 16], 
+    16: [15, 11, 10, 6], 
+    17: [6, 7, 18], 
+    18: [17, 7, 8, 9, 19, 20], 
+    19: [18, 20, 21], 
+    20: [18, 19, 21, 17], 
+    21: [20, 19, 22, 24], 
+    22: [21, 24, 23], 
+    23: [22],
+    24: [22, 21]
 }
 
-# Fill the matrix
-for city in adj_list:
-    u = city_map[city]
-    for neighbor in adj_list[city]:
-        v = city_map[neighbor]
+# Fill the matrix using numeric IDs
+for u in adj_list:
+    for v in adj_list[u]:
         adj_matrix[u][v] = 1
         adj_matrix[v][u] = 1 # undirected graph
 
